@@ -10,4 +10,5 @@ Notuð eru tvö Web API í verkefninu.
 ## Javascript tól
 Notuð eru tvö tól í verkefninu
 - "Build" ferli er sett upp með með Vite
-- Þrjár prófanir gerðar með Jest 
+- Þrjár prófanir gerðar með Jest
+    - Eins og staðan var þegar ég gerði þetta vildi ekki eslint leyfa testin úr jest og gaf villu útaf því. Reyndi að gúggla og chatta mig í gegnum það en gekk ekkert, vona að það sé skiljanlegt
