@@ -1,0 +1,13 @@
+{
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true  // Enables Jest globals like `test` and `expect`
+    },
+    "plugins": ["jest"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"  // Recommends Jest-specific linting rules
+    ]
+  }
+  

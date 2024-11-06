@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background-color: #f8f8ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --spacing: 1rem;
+  --max-width: 56rem;
+  --font-size-button: 1rem;
+  --font-family: -system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+    roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --color-light-gray: #f5f5f5;
+  --color-background-zebra: var(--color-light-gray);
+  --vertical-space: 30px;
+}
+
+.hidden {
+  /* Viljum að þetta feli alltaf element, notum því !important */
+  display: none !important;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--vertical-space);
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  align-self: flex-start;
+  padding: 20px;
+  width: 100%;
+  background-color: #6495ed;
+  border-bottom: 7px #405fb4 solid;
+}
+
+.wrapper-content {
+  width: calc(100% - (2 * 20px));
+  max-width: 1200px;
+}
+
+.input-window {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  border: 1px #d3d3d3 solid;
+  background-color: #fff;
+}
+
+.input-header {
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.input-window .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.output {
+  margin: 1rem 0;
+  align-self: center;
+}
+
+.output img {
+  width: 300px;
+  height: 100%;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--vertical-space);
+}
+
+.output-window {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  border: 1px #d3d3d3 solid;
+  background-color: #fff;
+}
+
+.output-result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: var(--spacing);
+}
+
+.output-window .content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border: 1px #d3d3d3 solid;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+.output-window .explain {
+  padding: var(--spacing);
+}
+
+.analysis-window {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  border: 1px #d3d3d3 solid;
+  background-color: #fff;
+  margin-bottom: var(--vertical-space);
+}
+
+.analysis-window .content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border: 1px #d3d3d3 solid;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+.analysis-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(0.5 * var(--spacing));
+}
+
+.analysis-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.color-analysis {
+  width: 80%;
+  height: 75px;
+}
+
+.intensity {
+  width: 80%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+}
+
+.intensity p {
+  width: calc(100%/3);
+  align-self: center;
+  text-align: center;
+  height: 100%;
+}
+
+.analysis-window h3 {
+  align-self: flex-start;
+  padding-left: 0.5rem;
+}
+
+.analysis-result:nth-of-type(4) {
+  margin-bottom: var(--spacing);
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="is" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find the color</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Smokey's color picker</h1>
+      </header>
+      <div class="wrapper-content">
+        <main class="wrapper-main">
+          <div class="input-window">
+            <div class="input-header">
+              <h2>Select an Image</h2>
+            </div>
+            <div class="content">
+              <p>
+                Browse and pick the image from which you want to pick the colors
+              </p>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="output-window">
+            <div class="input-header">
+              <h2>Pick color</h2>
+            </div>
+            <div class="explain">
+              <p>
+                Click the image to open the color picker. Click the image again
+                to get the color.
+              </p>
+            </div>
+            <div class="output"></div>
+            <div class="output-result">
+              <div class="content">
+                <p><strong>Hexcode</strong></p>
+                <p class="hex">No color selected</p>
+              </div>
+              <div class="content">
+                <p><strong>Color</strong></p>
+                <p class="color">No color selected</p>
+              </div>
+            </div>
+          </div>
+          <div class="analysis-window">
+            <div class="input-header">
+              <h2>Color Analysis</h2>
+            </div>
+            <div class="analysis-result">
+              <h3>Selected color</h3>
+              <div class="analysis-text">
+                <div class="content">
+                  <p><strong>Hexcode</strong></p>
+                  <p class="main-hex">No color selected</p>
+                </div>
+                <div class="content">
+                  <p><strong>RGB</strong></p>
+                  <p class="main-rgb">No color selected</p>
+                </div>
+              </div>
+              <div class="color-analysis main-color"></div>
+            </div>
+            <div class="analysis-result">
+              <h3>Red, Green, Blue intensities</h3>
+              <div class="intensity">
+                <p class="red"></p>
+                <p class="green"></p>
+                <p class="blue"></p>
+              </div>
+            </div>
+            <div class="analysis-result">
+              <h3>Inverted color</h3>
+              <div class="analysis-text">
+                <div class="content">
+                  <p><strong>Hexcode</strong></p>
+                  <p class="inverted-hex">No color selected</p>
+                </div>
+                <div class="content">
+                  <p><strong>RGB</strong></p>
+                  <p class="inverted-rgb">No color selected</p>
+                </div>
+              </div>
+              <div class="color-analysis inverted-color"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
